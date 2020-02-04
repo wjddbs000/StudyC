@@ -13,13 +13,8 @@
 // 메인함수
 int main(void) 
 {
-    FILE* fp = NULL;
-    char buffer[100];
-    if ((fp = fopen("D://decment//hello.txt", "r")) == NULL)
-    {
-        printf("");
-    }
-    
-    system("pause");
+	printf("Hello World!\n");
+    // type here.
+	system("pause");
 	return EXIT_SUCCESS;
 }
