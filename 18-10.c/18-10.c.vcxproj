@@ -23,13 +23,12 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="a.txt" />
-    <Text Include="b.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{9fc91254-81ce-499a-b538-dc39388d1dde}</ProjectGuid>
+    <ProjectGuid>{2b4f747e-fbb0-4c78-b964-92e555aed345}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>_18_1FileTestApp</RootNamespace>
+    <RootNamespace>_18_10_c</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

@@ -22,14 +22,14 @@
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="a.txt" />
-    <Text Include="b.txt" />
+    <Text Include="aa.txt" />
+    <Text Include="aaa.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{9fc91254-81ce-499a-b538-dc39388d1dde}</ProjectGuid>
+    <ProjectGuid>{a8645afc-739e-4d98-b0d6-5d31ec7fc315}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>_18_1FileTestApp</RootNamespace>
+    <RootNamespace>_18_8FileCopyApp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
