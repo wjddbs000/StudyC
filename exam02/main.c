@@ -30,7 +30,9 @@ int main(void)
     printf("Hello World!\n\n");
     // type here.
     int meau_num = 0;
-    int num;
+    int num,i=0;
+    FILE* fp;
+
     while (1) {
         printf("1번 입력 \n2번 수정\n3번 삭제\n4번 전체출력\n5번검색\n6번 종료\n\n");
         printf("메뉴 입력 : ");
@@ -58,7 +60,26 @@ int main(void)
             search_business_card(num);
             system("pause");
             break;
-        case 6: exit(EXIT_SUCCESS);
+        case 6:
+
+            fp = fopen("card_data.txt", "w");
+            if (fp == NULL)
+            {
+                printf("파일생성 실패");
+
+                break;
+            }
+            for (int i = 0; i < index; i++)
+            {
+
+                fprintf(fp, "명함번호 : %d\n이름 : %s \n폰번호 : %s \n이메일 : %s\n\n",id[i].index, id[i].name, id[i].phone_num, id[i].e_mail);
+
+            }
+
+            
+            fclose(fp);
+           
+            exit(EXIT_SUCCESS);
         default:
             break;
         }

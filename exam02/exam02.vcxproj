@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="card_data.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{476e9ba8-bc8b-432f-827b-d43e8d8ca324}</ProjectGuid>

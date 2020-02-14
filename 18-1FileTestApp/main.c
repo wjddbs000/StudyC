@@ -55,27 +55,27 @@ int main(void)
 	//fclose(fp);
 	//printf("\n");
 
-	//printf("抗力 18-3.c\n\n");
-	//FILE* fp;
-	//char str[] = "banana";
-	//int i=0,ch;
+	printf("抗力 18-3.c\n\n");
+	FILE* fp;
+	char str[] = "banana";
+	int i=0,ch;
 
-	//fp = fopen("b.txt", "w");
+	fp = fopen("b.txt", "w");
 
-	//if (fp == NULL)
-	//{
-	//	printf("颇老积己 角菩");
+	if (fp == NULL)
+	{
+		printf("颇老积己 角菩");
 
-	//	return EXIT_FAILURE;
-	//}
+		return EXIT_FAILURE;
+	}
 
-	//while (str[i] != '\0') {
-	//	fputc(str[i], fp);
-	//		i++;
-	//}
-	//fputc('\n',fp);
-	//fclose(fp);
-	//printf("\n");
+	while (str[i] != '\0') {
+		fputc(str[i], fp);
+			i++;
+	}
+	fputc('\n',fp);
+	fclose(fp);
+	printf("\n");
 
 	//printf("抗力 18-5.c\n\n");
 
