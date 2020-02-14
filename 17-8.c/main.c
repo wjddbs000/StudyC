@@ -1,50 +1,19 @@
-/*
-  filename - main.c
-  version - 1.0
-  description - 기본 메인 함수,함수에서 -> 연산자를 사요하여 구조채 배열의 값 출력
-  --------------------------------------------------------------------------------
-  first created - 2020.02.07.
-  writer - JeongYun Song.
-*/
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-struct address
-{
-    char name[20];
-    int age;
-    char tel[20];
-    char addr[80];
-};
+int global = 10;
 
-void print_list(struct address* lp);
+void globalTest() {
+	global += 5;
+	printf("함수에서 전역 변수 : %d\n", global);
 
-// 메인함수
-int main(void)
-{
-    printf("예제 17-8.c\n\n");
-    // type here.
-    struct address list[5] = {
-        {"홍길동",23,"111-1111","울릉도 독도"},
-    {"이순신",35,"222-2222","서울 건천동"},
-    {"장보고",19,"333-3333","완도 청해진"},
-    {"유관순",15,"444-4444","충남 천안"},
-    {"안중근",45,"555-5555","황해도 해주"}
-    };
-     
-    print_list(list);
-
-    return EXIT_SUCCESS;
 }
 
-void print_list(struct address* lp) {
-    int i;
+int main() {
+	int result = 10;
+	printf("전역변수 : %d\n", global);
+	printf("지역변수 : %d\n", result);
 
-    for (i = 0; i < 5; i++)
-    {
-        printf("%10s%5d%15s%20s\n", lp[i].name, (*(lp+i)).age, (*(lp + i)).tel, (*(lp + i)).addr);
-    }
-    system("pause");
+	globalTest();
+
+	return 0;
 }
